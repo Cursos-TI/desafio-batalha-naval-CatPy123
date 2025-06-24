@@ -48,6 +48,7 @@ int main() {
                         printf("Os barcos estão se sobrepondo - altere a posição de um dos barcos\n\n");
                     }
                     batalha[(i-1)][(j-1)] = 3;
+                    printf("O navio vertical está na posição %d, %d\n", (i-1), (j-1));
                 }
             }
             if (i == (linha_inicial_navioh) && j == (coluna_inicial_navioh)) {
@@ -59,6 +60,7 @@ int main() {
                             printf("Os barcos estão se sobrepondo - altere a posição de um dos barcos\n");
                         }
                         batalha[(i-1)][(j-1)] = 3;
+                        printf("O navio horizontal está na posição %d, %d\n", (i-1), (j-1));
                     }
                 }
             }
@@ -71,6 +73,7 @@ int main() {
         }
         printf("\n");
     }
+
 
     
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
